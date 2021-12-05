@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title> Compund Interest Calculator </title>
+      <!--
+         Fonts from google fonts
+         -->
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <h1>
+         Compound Interest Calculator
+      </h1>
+      <div id="calculations">
+         Principal: <input type = "number" id= "principal"> 
+         Interest Rate (%):<input type = "number" id= "interest">
+         Compound Frequency (per year):<input type = "number" id= "compound"> 
+         Time (years): <input id="time" type="range" min="0" max="100" value= "50"oninput="this.nextElementSibling.value = this.value">  <output>50</output> 
+         <p> </p>
+         <!--
+            Added an empty paragraph for the column outputs to not be unbalanced
+            -->
+         Compound Interest: <span id="CIR"> </span> 
+         Profit: <span id= "profit"> </span>
+      </div>
+      <img id ="happyImage" src = "Happy.png">
+      <p id = "happyText" font-size: 25px> Hover over image for suprise! </p>
+      <script src="script.js"></script>
+   </body>
+</html>
+
